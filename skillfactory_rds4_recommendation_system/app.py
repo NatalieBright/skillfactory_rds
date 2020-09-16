@@ -56,9 +56,9 @@ ratings, items  = read_files(folder_name='data')
 item_embeddings,nms_idx = load_embeddings()
 
 #Форма для ввода текста
-itemid_for_reccomend = st.text_input('Goods name', '')
+itemid_for_reccomend = st.text_input('Goods ID', '')
 if not itemid_for_reccomend.isdigit():
-    itemid_for_reccomend = 12345
+    itemid_for_reccomend = 1
     'You can start with ', itemid_for_reccomend, ' (0 - 41301)'
 itemid_list = list(range(int(itemid_for_reccomend) - 5, int(itemid_for_reccomend) + 5))
 
