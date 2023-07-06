@@ -6,4 +6,4 @@ lightfm==1.15
 
 nmslib==2.0.5
 
-scipy==1.1.0
+scipy==1.10.0
